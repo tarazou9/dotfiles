@@ -1,14 +1,14 @@
-# jldeen does dotfiles - forked from holman's repo
+# ronniehicks does dotfiles - forked from jldeen's repo
 
 ### WSL Configuration
 Run the following to configure WSL from scratch...
 ```
-bash -c "$(curl -fsSL https://raw.githubusercontent.com/jldeen/dotfiles/wsl/configure.sh)"
+bash -c "$(curl -fsSL https://raw.githubusercontent.com/ronniehicks/dotfiles/wsl/configure.sh)"
 ```
 ### WSL Emulator Install
 Run the following command from an Administrator PowerShell prompt...
 ```
-Set-ExecutionPolicy Bypass; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/jldeen/dotfiles/wsl/wslterm.ps1'))
+Set-ExecutionPolicy Bypass; iex ((New-Object System.Net.WebClient).DownloadString('https://raw.githubusercontent.com/ronniehicks/dotfiles/wsl/wslterm.ps1'))
 ```
 
 ### Notes
@@ -36,7 +36,7 @@ symlinked without extension into `$HOME` when you run `script/bootstrap`.
 
 A lot of stuff. Seriously, a lot of stuff. Check them out in the file browser
 above and see what components may mesh up with you.
-[Fork holman's](https://github.com/holman/dotfiles/fork) or [Fork mine](htps://github.com/jldeen/dotfiles/fork), remove what you don't
+[Fork holman's](https://github.com/holman/dotfiles/fork), [jldeen's](htps://github.com/jldeen/dotfiles/fork) or [Fork mine](https://github.com/ronniehicks/dotfiles/fork), remove what you don't
 use, and build on what you do use.
 
 ## components
@@ -64,7 +64,7 @@ There are two branches here: WSL and MacOS (still in development).
 Run this:
 
 ```sh
-git clone https://github.com/jldeen/dotfiles.git ~/.dotfiles
+git clone https://github.com/ronniehicks/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
 script/bootstrap
 ```
