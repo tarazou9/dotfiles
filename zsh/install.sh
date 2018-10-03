@@ -1,4 +1,13 @@
-if [ ! -d "$HOME/.oh-my-zsh/custom/themes/powerlevel9k" ]; then
-    echo "› installing powerlevel9k theme"
-    git clone https://github.com/bhilburn/powerlevel9k.git ~/.oh-my-zsh/custom/themes/powerlevel9k
-fi
+CUSTOM_DIR = ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}
+
+echo "› re-installing powerlevel9k theme"
+sudo rm -rf ${CUSTOM_DIR}/themes/powerlevel9k
+sudo git clone https://github.com/bhilburn/powerlevel9k.git ${CUSTOM_DIR}/themes/powerlevel9k
+
+echo "› re-installing zsh-autosuggestions"
+sudo rm -rf ${CUSTOM_DIR}/plugins/zsh-autosuggestions
+sudo git clone https://github.com/zsh-users/zsh-autosuggestions ${CUSTOM_DIR}/plugins/zsh-autosuggestions
+
+echo "› re-installing zsh-syntax-highlighting"
+sudo rm -rf ${CUSTOM_DIR}/plugins/zsh-syntax-highlighting
+sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${CUSTOM_DIR}/plugins/zsh-syntax-highlighting
