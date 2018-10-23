@@ -6,6 +6,7 @@ tap 'caskroom/fonts'
 
 brew 'ack'
 brew 'coreutils'
+brew 'git-credential-manager'
 brew 'go'
 brew 'grc'
 brew 'fpp'
