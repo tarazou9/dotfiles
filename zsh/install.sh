@@ -11,3 +11,7 @@ sudo git clone https://github.com/zsh-users/zsh-autosuggestions ${CUSTOM_DIR}/pl
 echo "› re-installing zsh-syntax-highlighting"
 sudo rm -rf ${CUSTOM_DIR}/plugins/zsh-syntax-highlighting
 sudo git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${CUSTOM_DIR}/plugins/zsh-syntax-highlighting
+
+echo "› re-installing zsh-nvm"
+sudo rm -rf ${CUSTOM_DIR}/plugins/zsh-nvm
+sudo git clone https://github.com/lukechilds/zsh-nvm ${CUSTOM_DIR}/plugins/zsh-nvm
