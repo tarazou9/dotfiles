@@ -11,6 +11,7 @@ echo "› brew bundle"
 brew bundle
 
 # find the installers and run them iteratively
+# TODO: At some point prompt for confirmation of each install
 find . -name install.sh | while read installer ; do echo "Calling ${isntaller}" && sh -c "${installer}" ; done
 
 if [ ! -x "$HOME/.vimrc" ]; then
