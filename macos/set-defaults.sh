@@ -75,9 +75,6 @@ defaults write com.apple.finder ShowHardDrivesOnDesktop -bool true && \
 defaults write com.apple.finder ShowMountedServersOnDesktop -bool true && \
 defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 
-# Avoid creating .DS_Store files on network volumes
-defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool true
-
 
 # Set the terminal theme to "Pro." The default white background looks terrible.
 #   From https://github.com/mathiasbynens/dotfiles/blob/master/.osx
@@ -89,6 +86,8 @@ tell application "Terminal"
     (* Store the IDs of all the open terminal windows. *)
     set initialOpenedWindows to id of every window
     (* Set the custom theme as the default terminal theme. *)
+    set font name of settings set themeName to "SauceCodePro Nerd Font Mono"
+    set font size of settings set themeName to 13
     set default settings to settings set themeName
     repeat with windowID in initialOpenedWindows
         (* Change the theme for the initial opened terminal windows
